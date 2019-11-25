@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>08 - Tablas sencillas</title>
+        <meta name="author" content="pablo"/>
+        <meta name="keywords" content="prueba plantilla lm"/>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    </head>
+    <body>
+        <h1>Tablas sencillas</h1>
+        
+        <h2>Tabla básica</h2>
+        <table border="1">
+            <caption>Horario de los cursos</caption>
+            <tr><!-- table row -->
+                <!-- table data-->
+                <th scope="col">Cursos</th>
+                <th scope="col">Horas</th>
+                <th scope="col">Horarios</th>
+            </tr>
+            <tr>
+                <th scope="row">CSS</th>
+                <td style="color:green">20h</td>
+                <td>16:00 - 20:00</td>
+            </tr>
+            <tr>
+                <th scope="row">HTML</th>
+                <td>16h</td>
+                <td>17:00 - 19:00</td>
+            </tr>
+            <tr>
+                <th scope="row">JS</th>
+                <td>10h</td>
+                <td>17:00 - 19:00</td>
+            </tr>
+        </table>
+
+        <h2>Fusión de columnas</h2>
+        <table border="1">
+            <caption>Tipos de motores</caption>
+            <tr>
+                <th scope="col" colspan="4">Tipos de motores</th>
+            </tr>
+            <tr>
+                <td>Gasolina</td>
+                <td>Diésel</td>
+                <td>Híbrido</td>
+                <td>GNC</td>
+            </tr>
+        </table>
+
+        <h2>Fusión de filas</h2>
+        <table border="1">
+            <caption>Actividades del día 14</caption>
+            <tr>
+                <td rowspan="3">Día 14</td>
+                <td>
+                    <strong>09:00 - 10:00</strong>
+                    <br/>
+                    Desayuno
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>10:00 - 10:30</strong>
+                    <br/>
+                    Recepción
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>10:30 - 11:00</strong>
+                    <br/>
+                    Conferencia 1
+                </td>
+            </tr>
+
+        </table>
+
+    </body>
+</html>

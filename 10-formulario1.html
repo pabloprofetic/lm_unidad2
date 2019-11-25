@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Formularios</title>
+        <meta name="author" content="pablo"/>
+        <meta name="keywords" content="prueba plantilla lm"/>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    </head>
+    <body>
+        <h1>Formularios Básicos</h1>
+        
+        <h2>Formulario con POST</h2>
+        <form method="POST" 
+                action="http://192.168.21.109/unidad2/formularios/login1.php">
+            Nombre: <br/>
+            <input type="text" name="usuario" placeholder="Ingresa aquí el nombre"/>
+            <br/>
+            Contraseña: <br/>
+            <input type="password" name="contrasenya" placeholder="Escribe la contraseña"/>
+            <br/>
+            <input type="submit" value="Enviar"/>
+            <input type="reset" value="Borrar"/>
+            <input type="button" value="Un botón" onclick="alert('hola')"/>
+        </form>
+
+        <h2>Formulario con GET</h2>
+        <form method="GET" 
+                action="http://192.168.21.109/unidad2/formularios/login2.php">
+            Nombre: <br/>
+            <input type="text" name="usuario"/>
+            <br/>
+            Contraseña: <br/>
+            <input type="password" name="contrasenya"/>
+            <br/>
+            <input type="submit" value="Enviar"/>
+        </form>
+
+
+    </body>
+</html>

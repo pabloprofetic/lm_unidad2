@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formularios en HTML5</title>
+        <meta name="author" content="pablo"/>
+        <meta name="keywords" content="prueba plantilla lm"/>
+        <meta charset="UTF-8"/>
+        <style>
+            input, select {
+                display: block;
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Formularios HTML5</h1>
+        
+        <form action="#" method="post">
+            <label for="i-busqueda">Búsqueda</label>
+            <input type="search" id="i-busqueda" name="busqueda" required>
+
+            <label for="i-numero">Números</label>
+            <input type="number" id="i-numero" min="0" max="50" name="numero"> 
+
+            <label for="i-rango">Rangos</label>
+            <input type="range" id="i-rango" min="0" max="100" step="25" name="rango"> 
+
+            <label for="i-hora">Hora</label>
+            <input type="time" id="i-hora" name="hora"> 
+
+            <label for="i-url">URL</label>
+            <input type="url" id="i-url" name="url"> 
+
+            <label for="i-email">Email</label>
+            <input type="email" id="i-email" name="email">
+
+            <label for="i-fecha">Fecha</label>
+            <input type="date" id="i-fecha" name="fecha"> 
+
+            <label for="i-fechahora">Fecha y hora</label>
+            <input type="datetime-local" id="i-fechahora" name="fechahora"> 
+
+            <select name="opciones">
+                <option value="o1">Opción 1</option>
+                <option value="o2" selected>Opción 2</option>
+                <option value="o3">Opción 3</option>
+            </select>
+
+            <label for="chk-recordar">Recordar credenciales</label>
+            <input type="checkbox" id="chk-recordar" checked>
+
+            <input type="submit" value="Enviar">
+        </form>
+
+
+    </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Formulario 2</title>
+        <meta name="author" content="pablo"/>
+        <meta name="keywords" content="prueba plantilla lm"/>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    </head>
+    <body>
+        <h1>Elementos de formulario</h1>
+        <form method="post" 
+            action="http://192.168.21.109/unidad2/formularios/formulario2.php"
+            enctype="multipart/form-data">
+        
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label for="input_nombre">Nombre:</label><br/>
+                <input id="input_nombre" type="text" size="2" name="nombre" value="manolo"/>
+                <br/>
+                <label for="input_foto">Nombre:</label><br/>
+                <input id="input_foto" type="file" name="foto"/>
+                <br/>
+                Edad:<br/>
+                <input type="number" name="nota" min="0" max="10" size="2"/>
+
+
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Preguntas de cine</legend>
+                <!-- Checkbox -->
+                <br/>
+                Géneros de cine favoritos:<br/>
+                <input type="checkbox" name="genero_comedia"/>Comedia 
+                <input id="chk_accion" type="checkbox" checked="checked" name="genero_accion"/><label for="chk_accion">Acción</label>
+                <input type="checkbox" name="genero_suspense"/>Suspense 
+                <br/>
+                <!-- Radio button-->
+                ¿Comes palomitas en el cine?<br/>
+                <input type="radio" name="comer_palomitas" value="si"/> Sí
+                <input type="radio" name="comer_palomitas" value="no"/> No
+                <input type="radio" name="comer_palomitas" value="ns/nc"/> No sabe / no contesta
+
+                <br/>
+                <br/>
+                
+
+                <!-- select -->
+                <label for="cine_favorito">Elige tu cine favorito</label><br/>
+                <select id="cine_favorito" name="cine_favorito">
+                    <option disabled="disabled" selected="selected">Selecciona una opción</option>
+                    <option value="cine-alcampo">El del alcampo</option>
+                    <option value="cine-nuevo">El del centro comercial nuevo</option>
+                    <option value="cine-copo">El del copo</option>
+                    <option value="cine-roquetas">El de Roiquetas</option>
+                </select>
+
+                <br/>
+                <br/>
+                Describe tu película favorita:<br/>
+                <textarea name="pelicula_favorita" rows="5" cols="60"></textarea>
+
+                <!-- Select múltiple -->
+                <br/>
+                Elige tu zona favorita para sentarte:
+                <br/>
+                <select multiple="multiple" name="sitio_favorito">
+                    <option value="principio">Al principio</option>
+                    <option value="centro">En medio</option>
+                    <option value="final">Al final</option>
+                </select>
+
+                <!-- Campos ocultos o hidden -->
+                <input type="hidden" name="id_usuario" value="cookie-12345"/>
+
+                <br/>
+                <br/>
+            </fieldset>
+            <input type="submit" value="Enviar"/>
+            <input type="reset" value="Limpiar"/>
+        </form>
+
+
+
+    </body>
+</html>
